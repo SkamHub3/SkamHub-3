@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000; /* Background is black */
+    color: white;
+    text-align: center;
+}
+
+/* Header/Banner Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Header is black */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Glow under the banner */
+header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(51, 102, 255, 0.6);
+    box-shadow: 0 0 15px rgba(51, 102, 255, 0.75);
+}
+
+/* Smaller Logo in the banner */
+.logo img {
+    max-height: 45px; /* Smaller logo size */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #3366FF;
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+}
+
+.main-logo img {
+    max-width: 600px; /* Smaller main logo */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Top Sites Section */
+.top-sites {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.site {
+    position: relative;
+    width: 30%;
+    max-width: 400px;
+}
+
+.middle {
+    transform: scale(1);
+}
+
+/* Site Image and Overlay */
+.site img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px #3366FF;
+    display: none;
+}
+
+/* On hover, show the overlay text */
+.site:hover .overlay {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-sites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* New text styles */
+.info-text {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
