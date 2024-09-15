@@ -150,3 +150,340 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Highlighted text (blue) */
+.highlight {
+    color: #3366FF;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Same black background */
+    padding: 10px; /* Smaller footer */
+    text-align: left;
+    position: relative;
+    font-size: 12px; /* Make footer text smaller */
+}
+
+/* Lighter glow line under the footer */
+footer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: white; /* Lighter and smaller glow */
+    box-shadow: 0 0 5px white; /* Smaller glow */
+}
+
+/* Footer Logo and Text */
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-logo img {
+    max-height: 30px; /* Smaller logo */
+    display: block;
+    margin-bottom: 5px; /* Small space below logo */
+}
+
+/* Footer text styling */
+.footer-logo p {
+    margin: 2px 0;
+}
+
+/* Make copyright text blue and clickable */
+.footer-logo a {
+    color: #3366FF; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 12px;
+}
+
+/* Add hover effect to links */
+.footer-logo a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo img {
+    max-height: 45px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* Mobile Menu Hidden by Default */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Game Section */
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game {
+    position: relative;
+    width: 18%;
+    max-width: 200px;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px #00e5ff;
+    display: none;
+}
+
+.game:hover .overlay {
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    color: white;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+footer a {
+    color: #3366FF;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-glow {
+    height: 4px;
+    background: rgba(51, 102, 255, 0.2);
+    box-shadow: 0 0 8px rgba(51, 102, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Modal Styles */
+#game-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* High z-index to be on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#game-modal-content {
+    background-color: rgb(21, 21, 21);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative; /* Relative for the close button positioning */
+}
+
+#game-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Modal container */
+#game-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it appears above other elements */
+}
+
+/* Modal content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Modal title */
+#game-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Modal description */
+#game-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Modal release date */
+#game-release-date {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Modal reviews */
+#game-reviews {
+    font-size: 14px;
+}
+
+
+
+
+/* Search bar styling */
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Game highlight effect */
+.game {
+    transition: box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Smooth transition for the glow and border-radius */
+}
+
+
+
+

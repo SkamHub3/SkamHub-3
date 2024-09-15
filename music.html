@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkamHub - Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="SkamHub Favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="skamhub logo.png" alt="SkamHub Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="music.html" class="active">Music</a></li>
+                <li><a href="vpn.html">VPN</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>MUSIC</h2>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" onkeyup="searchSongs()" placeholder="Search for songs...">
+        </div>
+
+        <div class="songs-list">
+            <!-- Song 1 -->
+            <div class="song-container">
+                <iframe src="https://drive.google.com/uc?export=embed&id=1ybXvt84MuyLBPW3nLhObTuuip_cB0JQS" allow="autoplay"></iframe>
+                <h3>Song 1 Name</h3>
+                <p>Album: Album Name</p>
+                <p>Artist: Artist Name</p>
+            </div>
+
+            <!-- Song 2 -->
+            <div class="song-container">
+                <iframe src="https://drive.google.com/uc?export=embed&id=1eKSW4yc2237umN46CpqT3GWtei0qLvQf" allow="autoplay"></iframe>
+                <h3>Song 2 Name</h3>
+                <p>Album: Album Name</p>
+                <p>Artist: Artist Name</p>
+            </div>
+
+            <!-- Song 3 -->
+            <div class="song-container">
+                <iframe src="https://drive.google.com/uc?export=embed&id=1GXNtAlwv48KPMLkVGZv-Y1lt-OKrBeIT" allow="autoplay"></iframe>
+                <h3>Song 3 Name</h3>
+                <p>Album: Album Name</p>
+                <p>Artist: Artist Name</p>
+            </div>
+
+            <!-- Song 4 -->
+            <div class="song-container">
+                <iframe src="https://drive.google.com/uc?export=embed&id=1k7K_ES952sG64RPjNtSni9m2JuyRKEFm" allow="autoplay"></iframe>
+                <h3>Song 4 Name</h3>
+                <p>Album: Album Name</p>
+                <p>Artist: Artist Name</p>
+            </div>
+
+            <!-- Song 5 -->
+            <div class="song-container">
+                <iframe src="https://drive.google.com/uc?export=embed&id=15ZXyzGnG5a6qGIb_MF14WDk8Mvd4jH8Q" allow="autoplay"></iframe>
+                <h3>Song 5 Name</h3>
+                <p>Album: Album Name</p>
+                <p>Artist: Artist Name</p>
+            </div>
+
+            <!-- Additional Songs... -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <a href="home.html"><img src="skamhub logo.png" alt="SkamHub Logo Small"></a>
+        </div>
+        <p><a href="#">© 2024 SkamHub</a></p>
+        <p><a href="#">© 2024 ReturnAlt10 Studios</a></p>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script>
+        function searchSongs() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let songs = document.getElementsByClassName('song-container');
+
+            for (let i = 0; i < songs.length; i++) {
+                let songTitle = songs[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (songTitle.includes(input)) {
+                    songs[i].style.display = '';
+                } else {
+                    songs[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

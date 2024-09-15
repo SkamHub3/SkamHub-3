@@ -1,0 +1,4 @@
+Hexanaut IO
+Use your mouse to move across the map. Leave your territory to draw a line and start capturing new land. When you return to your territory you'll close the circle and take all the enclosed tiles. But when you are off your territory, you are at risk. If someone else moves into your tail, they will slice you and you'll have to start over. Try to capture 20% of the map to become the Hexanaut. If you can keep your territory over 20% for two minutes after becoming the Hexanaut, you'll win the game! Be careful: If you're eliminated while another player is the Hexanaut, you won't be able to rejoin the game.
+2022-03-22
+5 - Very Competitive Game
