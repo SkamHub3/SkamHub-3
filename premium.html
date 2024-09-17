@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="skamhub premium.png" alt="SkamHub Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="premium.html"  class="active">Premium</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="main-logo">
+            <img src="skamhub premium.png" alt="SkamHub Logo Large">
+        </div>
+        <!-- Login Form Container -->
+        <div id="login-container" style="display: none;">
+            <div class="login-form">
+                <h2>Login to Access Premium Games</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <button id="login-btn">Login</button>
+                <div id="login-error" style="color:red;"></div>
+            </div>
+        </div>
+
+        <!-- Premium Games Container -->
+        <div id="games-container" style="display: none;">
+            <h2>Premium Games</h2>
+            <button id="access-games-btn">Access Premium Games</button>
+            <p>Enjoy the latest premium games!</p>
+        </div>
+    </main>
+
+    <script src="premium.js"></script>
+</body>
+</html>
