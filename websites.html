@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkamHub - Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="SkamHub Favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="skamhub logo.png" alt="SkamHub Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Gαmes</a></li>
+                <li><a href="websites.html" class="active">Websites</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>WEBSITES</h2>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" onkeyup="searchGames()" placeholder="Search for websites...">
+        </div>
+
+        <div class="games-grid">
+            <!-- Game blocks with data-name attribute -->
+            <div class="game" data-name="windows 93">
+                <a href="http://www.windows93.net/" target="_blank">
+                    <img src="windows 93.png" alt="Windows 93 Website Image">
+                </a>
+                <div class="overlay">
+                    Windows 93
+                    <button class="info-btn" onclick="openGameModal('Windows 93', 'WINDOWS93 is a website stylised to look and work as an operating system, [4] often called a Web OS, and a parody of the Windows 9x series.', '2017', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="bouncing dvd logo">
+                <a href="https://www.bouncingdvdlogo.com/" target="_blank">
+                    <img src="dvd.jpg" alt="Bouncing DVD Website Image">
+                </a>
+                <div class="overlay">
+                    Bouncing DVD Logo
+                    <button class="info-btn" onclick="openGameModal('Bouncing DVD Logo', 'Watch the bouncing DVD logo hit a corner of the Internet.', '', '★★★☆☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="chrome web store">
+                <a href="https://www.chrome.google.com/webstore/category/extensions" target="_blank">
+                    <img src="chrome web store.jpg" alt="Chrome Web Store Website Image">
+                </a>
+                <div class="overlay">
+                    Chrome Web Store
+                    <button class="info-btn" onclick="openGameModal('Chrome Web Store', 'App Store for Chrome', '', '★★★★★')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="chrome web store">
+                <a href="https://www.opautoclicker.com/" target="_blank">
+                    <img src="autoclick.png" alt="OP Auto Clicker Website Image">
+                </a>
+                <div class="overlay">
+                    OP Auto Clicker
+                    <button class="info-btn" onclick="openGameModal('OP Auto Clicker', ' An auto clicker, with all the features you could ask for ', '', '★★★☆☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="chatgpt">
+                <a href="https://www.chat.openai.com/" target="_blank">
+                    <img src="chatgpt.webp" alt="ChatGPT Website Image">
+                </a>
+                <div class="overlay">
+                    ChatGPT
+                    <button class="info-btn" onclick="openGameModal('ChatGPT', ' An auto clicker, with all the features you could ask for ', '2021', '★★★★★')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="photopea">
+                <a href="https://www.photopea.com/" target="_blank">
+                    <img src="photopea.webp" alt="Photopea Website Image">
+                </a>
+                <div class="overlay">
+                    Photopea
+                    <button class="info-btn" onclick="openGameModal('Photopea', ' A Free Online PhotoShop Clone! ', '2021', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="dalle mini">
+                <a href="https://huggingface.co/spaces/dalle-mini/dalle-mini" target="_blank">
+                    <img src="dalle.png" alt="Dalle Mini Website Image">
+                </a>
+                <div class="overlay">
+                    Dalle Mini
+                    <button class="info-btn" onclick="openGameModal('Dalle Mini', ' Generate any AI Photo for free by using DALL•E 1 ', '2021', '★★☆☆☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="fake update">
+                <a href="https://fakeupdate.net/" target="_blank">
+                    <img src="fake update.jpg" alt="Fake Update Website Image">
+                </a>
+                <div class="overlay">
+                    Fake Update
+                    <button class="info-btn" onclick="openGameModal('Fake Update', ' Make it look like your device is updating. iOS, PC, MacOS and even Steam! ', '2022', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="soundful">
+                <a href="https://soundful.com/" target="_blank">
+                    <img src="soundful.png" alt="Soundful Website Image">
+                </a>
+                <div class="overlay">
+                    Soundful
+                    <button class="info-btn" onclick="openGameModal('Soundful', ' Generate AI Music. Account needed ', '2023', '★★★☆☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="github dev">
+                <a href="https://www.github.dev/" target="_blank">
+                    <img src="github dev.png" alt="GitHub Dev Website Image">
+                </a>
+                <div class="overlay">
+                    GitHub Dev
+                    <button class="info-btn" onclick="openGameModal('GitHub Dev', '  An online Visual Studio Code for developing websites.  ', '', '★★★★★')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="infinite mac">
+                <a href="https://www.infinitemac.org/" target="_blank">
+                    <img src="infinite mac.jpg" alt="Infinite Mac Website Image">
+                </a>
+                <div class="overlay">
+                    Infinite Mac
+                    <button class="info-btn" onclick="openGameModal('Infinite Mac', ' Use every version of Vintage MacOS up until OS 9 in your browser! ', '', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="gemini">
+                <a href="https://gemini.google.com/" target="_blank">
+                    <img src="gemini.jpg" alt="Gemini Website Image">
+                </a>
+                <div class="overlay">
+                    Gemini
+                    <button class="info-btn" onclick="openGameModal('Gemini', 'Googles verison of ChatGPT', '', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="capcut">
+                <a href="https://www.capcut.com/" target="_blank">
+                    <img src="capcut.png" alt="CapCut Website Image">
+                </a>
+                <div class="overlay">
+                    CapCut
+                    <button class="info-btn" onclick="openGameModal('CapCut', ' A popular video editing app (online version available) ', '', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="remove bg">
+                <a href="https://www.remove.bg/" target="_blank">
+                    <img src="remove bg.jpg" alt="Remove BG Website Image">
+                </a>
+                <div class="overlay">
+                    Remove BG
+                    <button class="info-btn" onclick="openGameModal('Remove BG', ' Removes Background of any image instantly, free ', '', '★★★☆☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="webgl samples">
+                <a href="https://www.webglsamples.org/" target="_blank">
+                    <img src="webgl samples.png" alt="WebGL Samples Website Image">
+                </a>
+                <div class="overlay">
+                    WebGL Samples
+                    <button class="info-btn" onclick="openGameModal('WebGL Samples', '  See how good your PC can handle in a browser (graphics)  ', '', '★★★★☆')">i</button>
+                </div>
+            </div>
+
+            <div class="game" data-name="dalle">
+                <a href="https://openai.com/index/dall-e-3/" target="_blank">
+                    <img src="dalle 2.png" alt="Dall-E 3 Website Image">
+                </a>
+                <div class="overlay">
+                    DALL•E 3
+                    <button class="info-btn" onclick="openGameModal('DALL•E 3', ' Create your own images that is totally not done by a person ', '2023', '★★★★★')">i</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="game-modal" class="modal">
+        <div id="game-modal-content" class="modal-content">
+            <span id="game-modal-close" class="close" onclick="closeGameModal()">&times;</span>
+            <h3 id="game-title"></h3>
+            <p id="game-description"></p>
+            <p id="game-release-date"></p>
+            <pre id="game-reviews"></pre>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <a href="home.html"><img src="skamhub logo.png" alt="SkamHub Logo Small"></a>
+        </div>
+        <p><a href="#">© 2024 SkamHub</a></p>
+        <p><a href="#">© 2024 ReturnAlt10 Studios</a></p>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <!-- Search Function Script -->
+    <script>
+        // Search functionality with auto-scroll
+        function searchGames() {
+            let input = document.getElementById('search-bar').value.toLowerCase();
+            let games = document.getElementsByClassName('game');
+            let foundGame = null;
+
+            for (let i = 0; i < games.length; i++) {
+                let gameName = games[i].getAttribute('data-name').toLowerCase();
+                
+                if (gameName.includes(input)) {
+                    games[i].style.display = ''; // Show matching games
+                    if (!foundGame) {
+                        foundGame = games[i]; // Scroll to the first match
+                    }
+                } else {
+                    games[i].style.display = 'none'; // Hide non-matching games
+                }
+            }
+
+            // If a game is found, scroll to it
+            if (foundGame) {
+                foundGame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                highlightGame(foundGame); // Highlight the game
+            }
+        }
+
+// Highlight the searched game with a glow effect that curves around it
+function highlightGame(gameElement) {
+    gameElement.style.boxShadow = '0 0 15px 5px blue'; // Add glow effect
+    gameElement.style.borderRadius = '15px'; // Add border radius to curve the glow
+
+    // Remove glow after 1 second
+    setTimeout(() => {
+        gameElement.style.boxShadow = ''; // Remove glow
+        gameElement.style.borderRadius = ''; // Reset border radius
+    }, 1000);
+}
+
+
+    </script>
+
+    <!-- Modal Script -->
+    <script>
+        // Open Modal Function
+        function openGameModal(title, description, releaseDate, reviews) {
+            document.getElementById('game-title').innerText = title;
+            document.getElementById('game-description').innerText = description;
+            document.getElementById('game-release-date').innerText = 'Release Date: ' + releaseDate;
+            document.getElementById('game-reviews').innerText = 'Reviews: ' + reviews;
+            document.getElementById('game-modal').style.display = 'block';
+        }
+
+        // Close Modal Function
+        function closeGameModal() {
+            document.getElementById('game-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,8 @@ const validUsers = [
     { username: 'wyounis', password: '4PEDF' },
     { username: 'arayet', password: 'ZFB1N' },
     { username: 'egulraiz', password: 'PEQ7G' },
-    { username: 'qmistry', password: 'ITS0H' }
+    { username: 'qmistry', password: 'ITS0H' },
+    { username: 'lwarwick', password: '6Q1S3' }
 ];
 
 // Check login status when the page loads

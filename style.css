@@ -847,3 +847,136 @@ footer a {
     align-items: center;
     justify-content: center;
 }
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Login Container Styling */
+#login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-container input[type="text"],
+#login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#login-container button:hover {
+    background-color: #00ddff;
+}
+
+/* Premium Games Container Styling */
+#games-container {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#access-games-btn {
+    padding: 15px 30px;
+    background-color: #0091ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#access-games-btn:hover {
+    background-color: #0091ff;
+}
+
+/* Game Widget Styling */
+.widget {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #0b0b0b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.widget img {
+    width: 100%;
+    height: auto;
+}
+
+.widget h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.widget p {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#fullscreen-btn, #close-widget-btn {
+    padding: 10px 20px;
+    margin: 20px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#fullscreen-btn:hover {
+    background-color: #0080ff;
+}
+
+#close-widget-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    #login-container, #games-container, .widget {
+        width: 90%;
+    }
+}
