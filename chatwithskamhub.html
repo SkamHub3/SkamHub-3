@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with SkamHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chatContainer {
+            width: 400px;
+            margin: 50px auto;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .message {
+            margin: 10px 0;
+        }
+        .user {
+            text-align: right;
+            color: blue;
+        }
+        .bot {
+            text-align: left;
+            color: green;
+        }
+        #userInput {
+            width: 70%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #sendBtn {
+            width: 20%;
+            padding: 10px;
+        }
+        #loadingBarContainer {
+            width: 100%;
+            background-color: #f3f3f3;
+            margin-top: 10px;
+            height: 20px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        #loadingBar {
+            width: 0;
+            height: 100%;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chatContainer">
+    <h2>Chat with SkamHub</h2>
+    <div id="messages"></div>
+    
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendBtn">Send</button>
+    
+    <!-- Loading bar container -->
+    <div id="loadingBarContainer">
+        <div id="loadingBar"></div>
+    </div>
+</div>
+
+<script src="chatwithskamhub.js"></script>
+
+</body>
+</html>

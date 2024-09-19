@@ -46,3 +46,21 @@ function openGameModal(gameName) {
 function closeGameModal() {
     document.getElementById('game-modal').style.display = 'none';
 }
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('nav');
+    
+    // Toggle the 'active' class to open/close the mobile menu
+    menuIcon.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+});
+

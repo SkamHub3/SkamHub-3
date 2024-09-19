@@ -980,3 +980,270 @@ footer a {
         width: 90%;
     }
 }
+
+
+
+
+
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile-first styles for the Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+  }
+  
+  header .logo img {
+    max-width: 100px;
+  }
+  
+  header nav {
+    display: none; /* Hide the nav links initially for mobile */
+  }
+  
+  header .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  header ul {
+    list-style: none;
+  }
+  
+  header ul li {
+    margin: 10px 0;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav.active {
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    header nav {
+      display: block; /* Show nav links on larger screens */
+    }
+  
+    header .menu-icon {
+      display: none; /* Hide the menu icon on larger screens */
+    }
+  
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    header ul li {
+      margin: 0 15px;
+    }
+  }
+  
+  /* Responsive Games/Website Section */
+  #games-container,
+  #websites-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    #games-container,
+    #websites-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #games-container,
+    #websites-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Adjusting buttons for smaller screens */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 767px) {
+    button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Hide the nav links on mobile by default */
+header nav {
+    display: none;
+}
+
+/* Show the nav when .active class is added */
+header nav.active {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    /* Show the navigation on larger screens */
+    header nav {
+        display: block;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Info Button Styles */
+.info-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0051ff; /* Main button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.info-btn:hover {
+    background-color: #006eff; /* Darker on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.info-btn:active {
+    transform: translateY(1px); /* Button press effect */
+}
+
+/* Mobile responsiveness for the info button */
+@media screen and (max-width: 768px) {
+    .info-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Premium Widget Styles */
+.premium-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #8dafff; /* Border color matching the theme */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.widget-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.widget-content {
+    padding: 20px;
+}
+
+.widget-content h2 {
+    font-size: 24px;
+    color: #0048ff; /* Title color */
+    margin-bottom: 10px;
+}
+
+.widget-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.premium-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0048ff; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.premium-button:hover {
+    background-color: #2f6aff; /* Darker on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.premium-button:active {
+    transform: translateY(1px); /* Button press effect */
+}
