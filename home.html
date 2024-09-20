@@ -16,29 +16,25 @@
         <nav>
             <ul>
                 <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="games.html">Gαmes</a></li>
+                <li><a href="gαmes.html">Gαmes</a></li>
                 <li><a href="websites.html">Websites</a></li>
                 <li><a href="premium.html">Premium</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Mobile Navigation Buttons -->
+    <div class="mobile-nav-buttons">
+        <a href="home.html" class="mobile-nav-button">Home</a>
+        <a href="gαmes.html" class="mobile-nav-button">Gαmes</a>
+        <a href="websites.html" class="mobile-nav-button">Websites</a>
+        <a href="premium.html" class="mobile-nav-button">Premium</a>
+    </div>
 
     <!-- Main Content -->
     <div class="main-content-wrapper">
         <!-- Left News Banners -->
         <aside class="news-banner left">
-            <div class="news-post">
-                <img src="skamhubpremium-news.png" alt="News 1">
-                <h3>Flex's Post on RA10's acquisition of SkamHub Response</h3>
-                <p>SkamHub was the first purchase that we made. Our goal was to modernise SkamHub and keep it as it was. We introduced a new, sleek design making SkamHub look more neater. The orignal owner of SkamHub was encouraged to help update SkamHub with new games and sites. The downfall of SkamHub was not caused by RA10 Studios. People in the community lost interest with the site but RA10 Studios kept on trying to revive the site, even by making a second version. SkamHub v3 will show that we still have interest in the project and SkamHub will reach a level that it's never seen before!</p>
-                <p><em>Written on: 16 September, 2024 by RA10 Studios</em></p>
-            </div>
-            <div class="news-post">
-                <img src="topgames-news.png" alt="News 2">
-                <h3>Top Games This Month</h3>
-                <p>Explore the most popular games trending on SkamHub!</p>
-                <p><em>Written on: 16 September, 2024 by SkamHub Team</em></p>
-            </div>
+
         </aside>
 
         <!-- Main Content -->
@@ -70,29 +66,166 @@
 
             <p class="info-text">
                 Welcome to SkamHub! SkamHub is free and will be free 
-                <span class="highlight">forever</span>. SkamHub can be used on any device and anywhere 
-                around the world. SkamHub v2 never released out of alpha by RA10 Studios but it still 
-                had impressive features and designs. All SkamHub’s pages have been created from the 
-                ground up for version 3!
+                <span class="highlight">forever</span>. SkamHub can be used on any device and anywhere around the world. SkamHub v2 never released out of alpha by RA10 Studios but it still had impressive features and designs. All SkamHub’s pages have been created from the ground up for version 3!
+                around the world...
             </p>
         </main>
 
         <!-- Right News Banners -->
         <aside class="news-banner right">
-            <div class="news-post">
-                <img src="skamhubpremiumgood-news.png" alt="News 3">
-                <h3>How to Access Premium Features</h3>
-                <p>Learn how you can unlock SkamHub Premium for more content...</p>
-                <p><em>Written on: 17 September, 2024 by SkamHub Team</em></p>
-            </div>
-            <div class="news-post">
-                <img src="games-news.png" alt="News 4">
-                <h3>New Games Added</h3>
-                <p>Check out the newly added games to the platform!</p>
-                <p><em>Written on: September 15, 2024 by Admin</em></p>
-            </div>
+
         </aside>
     </div>
+
+<!-- News Posts at the Bottom -->
+<div class="bottom-news-posts">
+    <h3>News Updates</h3>
+    <div class="news-posts-row">
+        <div class="news-post">
+            <img src="skamhubpremium-news.png" alt="News 1" class="small-image">
+            <h4>Flex's Post on RA10's acquisition of SkamHub Response</h4>
+            <button class="read-more" data-modal="modal1">Read More</button>
+        </div>
+        <div class="news-post">
+            <img src="piracy.png" alt="News 2" class="small-image">
+            <h4>Our Opinion on Piracy</h4>
+            <button class="read-more" data-modal="modal2">Read More</button>
+        </div>
+        <div class="news-post">
+            <img src="skamhubpremiumgood-news.png" alt="News 3" class="small-image">
+            <h4>How to Access Premium Features</h4>
+            <button class="read-more" data-modal="modal3">Read More</button>
+        </div>
+        <div class="news-post">
+            <img src="games-news.png" alt="News 4" class="small-image">
+            <h4>New Games Added</h4>
+            <button class="read-more" data-modal="modal4">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="skamhubpremium-news.png" alt="News 1" class="news-img">
+        <h4>Flex's Post on RA10's acquisition of SkamHub Response</h4>
+        <p>SkamHub was the first purchase that we made. Our goal was to modernise SkamHub and keep it as it was. We introduced a new, sleek design making SkamHub look more neater. The orignal owner of SkamHub was encouraged to help update SkamHub with new games and sites. The downfall of SkamHub was not caused by RA10 Studios. People in the community lost interest with the site but RA10 Studios kept on trying to revive the site, even by making a second version. SkamHub v3 will show that we still have interest in the project and SkamHub will reach a level that it's never seen before!</p>
+        <p><em>Written on: 16 September, 2024 by RA10 Studios</em></p>
+    </div>
+</div>
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="piracy.png" alt="News 2" class="news-img">
+        <h4>Flex's Piracy - Our Opinion on Piracy</h4>
+        <p>Flex Studios is in hot water after it was revealed that they allegedly told users to visit websites offering pirated movies. Many believe that guiding people to pirated content is just as bad as stealing it.
+While the CEO of Flex Studios hasn't commented, partner Hanan Nadeem responded casually, saying, “And,” which has upset many users who are concerned about the company's values.
+            On the other hand, RA10 Studios strongly opposes piracy. They have made it clear that SkamHub v3 will not have any pirated content or suggestions for finding such materials. RA10 Studios believes in supporting creators and keeping content legal and ethical.
+            As this situation unfolds, it highlights the importance of choosing platforms that respect content creators and promote good practices.</p>
+        <p><em>Written on: 20 September, 2024 by RA10 Studios</em></p>
+    </div>
+</div>
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="skamhubpremiumgood-news.png" alt="News 3" class="news-img">
+        <h4>How to Access Premium Features</h4>
+        <p>Learn how you can unlock SkamHub Premium for more content...</p>
+        <p><em>Written on: 17 September, 2024 by SkamHub Team</em></p>
+    </div>
+</div>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="games-news.png" alt="News 4" class="news-img">
+        <h4>New Games Added</h4>
+        <p>Check out the newly added games to the platform!</p>
+        <p><em>Written on: September 15, 2024 by Admin</em></p>
+    </div>
+</div>
+
+<!-- Comparison Section -->
+<section class="comparison-section">
+    <h2>Compare SkamHub Versions</h2>
+    <div class="comparison-container">
+        <div class="comparison-header">
+            <div class="comparison-title"></div>
+            <div class="comparison-title">SkamHub v3<br>(RA10 Studios)</div>
+            <div class="comparison-title">SkamHub v3 Premium<br>(RA10 Studios)</div>
+            <div class="comparison-title">SkamHub Premium<br>(Flex Studios)</div>
+            <div class="comparison-title">SkamHub Premium GOLD<br>(Flex Studios)</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">Trusted Company</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">SkamHub Assistant</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">SkamHub Chat</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">AI</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">PC & Mobile Support</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">Movies & Shows Built In</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">Pirated Movies</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">SkamHub Secure Lock</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+        <div class="comparison-row">
+            <div class="comparison-feature">Coded from the Ground Up</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">✓</div>
+            <div class="comparison-cell">-</div>
+            <div class="comparison-cell">-</div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
     <!-- Footer Section -->
     <footer>
@@ -106,5 +239,7 @@
             <p><a href="#">&#169; 2024 ReturnAlt10 Studios</a></p>
         </div>
     </footer>
+
+    <script src="home.js"></script>
 </body>
 </html>

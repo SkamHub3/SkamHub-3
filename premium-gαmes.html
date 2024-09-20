@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkamHub - Premium Gαmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="SkamHub Favicon.png" type="image/png">
+    <script src="premium-games.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="premium-logo">
+            <a href="premium.html"><img src="skamhub premium.png" alt="Premium Logo" class="logo-image"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="premium.html">Dashboard</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>PREMIUM GΑMES</h2>
+        <h4>Press below to play the gαme in SkamHub</h4>
+
+        <!-- Login Section -->
+        <div id="login-section">
+            <h3>Login Required</h3>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="login-error" style="color: red; display: none;">Invalid username or password</p>
+        </div>
+
+        <!-- Game Content -->
+        <div id="game-content" style="display: none;">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search-bar" onkeyup="searchGames()" placeholder="Search for gαmes...">
+            </div>
+
+            <div class="games-grid">
+                <!-- Game blocks with data-name attribute -->
+
+                <div class="game" data-name="hexanaut">
+                    <a href="https://www.hexanaut.io" target="_blank">
+                        <img src="hexanaut.jpg" alt="Hexanaut Game Image">
+                    </a>
+                    <div class="overlay">
+                        Hexanaut
+                        <button class="info-btn" onclick="openGameModal('Hexanaut', 'Hexanaut is a multiplayer strategy gαme where you capture hexagonal tiles.', '2022', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="doodle cricket">
+                    <a href="https://doodlecricket.github.io/#goog_rewarded" target="_blank">
+                        <img src="doodle cricket.jpg" alt="Doodle Cricket Game Image">
+                    </a>
+                    <div class="overlay">
+                        Doodle Cricket
+                        <button class="info-btn" onclick="openGameModal('Doodle Cricket', 'Fun and engaging cricket simulator.', '2017', '★★★☆☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="bongo cat">
+                    <a href="https://www.bongo.cat/" target="_blank">
+                        <img src="bongo.png" alt="Bongo Cat Game Image">
+                    </a>
+                    <div class="overlay">
+                        Bongo Cat
+                        <button class="info-btn" onclick="openGameModal('Bongo Cat', 'Hit the bongos like Bongo Cat!', '2018', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="sugar sugar">
+                    <a href="https://www.hoodamath.com/games/sugarsugar3.html" target="_blank">
+                        <img src="Sugar Sugar OG Image.png" alt="Sugar Sugar Game Image">
+                    </a>
+                    <div class="overlay">
+                        Sugar Sugar
+                        <button class="info-btn" onclick="openGameModal('Sugar Sugar', 'Strategic puzzle gαme.', '2021', '★★★☆☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="geometry dash">
+                    <a href="https://geometrygame.org/" target="_blank">
+                        <img src="geometry dash.jpg" alt="Geometry Dash Game Image">
+                    </a>
+                    <div class="overlay">
+                        Geometry Dash
+                        <button class="info-btn" onclick="openGameModal('Geometry Dash', 'Platformer meets rhythm in this gαme.', '2013', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="venge">
+                    <a href="https://www.venge.io/" target="_blank">
+                        <img src="venge.jpg" alt="Venge Game Image">
+                    </a>
+                    <div class="overlay">
+                        Venge
+                        <button class="info-btn" onclick="openGameModal('Venge', 'Venge is an objective-based first person shooter. On this awesome first person shooter gαme every match is an intense unique experience.', '2020', '★★★☆☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="paper io">
+                    <a href="https://games.voodoo.io/paperio2" target="_blank">
+                        <img src="paper io.avif" alt="Paper IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Paper IO
+                        <button class="info-btn" onclick="openGameModal('Paper IO', 'Paper.io 2 is a real-time multiplayer .io gαme where you have to capture as much territory as possible by painting it. Paint the map in your own color to take over the Paper.io world!.', '2018', '★★★★★')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="hole io">
+                    <a href="https://www.1001games.com/multiplayer/hole-io" target="_blank">
+                        <img src="hole io.jpg" alt="Hole IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Hole IO
+                        <button class="info-btn" onclick="openGameModal('Hole IO', 'Hole.io is a 2018 arcade physics puzzle gαme with battle royale mechanics created by French studio Voodoo for Android and iOS. Players control a hole in the ground that can move around the map.', '2018', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="agar io">
+                    <a href="https://agargame.io/" target="_blank">
+                        <img src="agar io.avif" alt="Agar IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Agar IO
+                        <button class="info-btn" onclick="openGameModal('Agar IO', 'Play online with players around the world as you try to become the biggest cell of them all! Control your tiny cell and eat other players to grow larger!', '2015', '★★★☆☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="slither io">
+                    <a href="https://slitheriogame.io/" target="_blank">
+                        <img src="slither io.jpg" alt="Slither IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Slither IO
+                        <button class="info-btn" onclick="openGameModal('Slither IO', 'Players control an avatar resembling a snake, which consumes multi-colored pellets, both from other players and ones that naturally spawn on the map in the gαme, to grow in size', '2016', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="territorial io">
+                    <a href="https://www.territorial.io/" target="_blank">
+                        <img src="terrirorial.jpg" alt="Territorial IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Territorial IO
+                        <button class="info-btn" onclick="openGameModal('Territorial IO', 'Territorial.io is a strategy gαme where you aim to conquer territories and dominate the map.', '2016', '★★★☆☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="stretchy morty">
+                    <a href="https://elasticman.co" target="_blank">
+                        <img src="stretchy morty.webp" alt="Stretchy Morty Game Image">
+                    </a>
+                    <div class="overlay">
+                        Stretchy Morty
+                        <button class="info-btn" onclick="openGameModal('Stretchy Morty', 'Elastic Man is an entertaining arcade gαme in which you can be free to play with an elastic face. Drag and pinch his face to relax and reduce stress.', '', '★★☆☆☆')">i</button>
+                    </div>
+                </div>
+
+
+                <div class="game" data-name="bloob io">
+                    <a href="https://bloob.io/" target="_blank">
+                        <img src="bloob.png" alt="Bloob IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Bloob IO
+                        <button class="info-btn" onclick="openGameModal('Bloob IO', 'Play popular multiplayer gαmes on Bloob.io: Four in a Row, Cards Against Humanity, Yahtzee, Checkers, Bomberman, and more. Join the fun today.', '', '★★★★☆')">i</button>
+                    </div>
+                </div>
+
+                <div class="game" data-name="krunker">
+                    <a href="https://krunker.io/" target="_blank">
+                        <img src="krunker.avif" alt="Krunker Game Image">
+                    </a>
+                    <div class="overlay">
+                        Krunker
+                        <button class="info-btn" onclick="openGameModal('Krunker', 'Krunker.io is a free Multiplayer gαme', '', '★★★★☆')">i</button>
+                    </div>
+                </div>
+    
+                <div class="game" data-name="smash karts">
+                    <a href="https://smashkarts.io/" target="_blank">
+                        <img src="smash karts.avif" alt="Smash Karts Game Image">
+                    </a>
+                    <div class="overlay">
+                        Smash Karts
+                        <button class="info-btn" onclick="openGameModal('Smash Karts', 'Smash Karts is a free io Multiplayer Kart Battle Arena gαme. Drive fast. Fire rockets. Make big explosions.', '2020', '★★★★☆')">i</button>
+                    </div>
+                </div>
+    
+                <div class="game" data-name="diep.io">
+                    <a href="https://diep.io/" target="_blank">
+                        <img src="diep io.jpg" alt="Diep IO Game Image">
+                    </a>
+                    <div class="overlay">
+                        Diep.io
+                        <button class="info-btn" onclick="openGameModal('Diep.IO', 'players control tanks in a two-dimensional arena. They earn experience points and upgrades by destroying shapes and other tanks', '2016', '★★★★☆')">i</button>
+                    </div>
+                </div>
+    
+                <div class="game" data-name="dinosaur game">
+                    <a href="https://dinosaurgame.app/" target="_blank">
+                        <img src="dino game.avif" alt="Dinosaur Game Image">
+                    </a>
+                    <div class="overlay">
+                        Dinosaur Gαme
+                        <button class="info-btn" onclick="openGameModal('Dino', 'Dinosaur Gαme is the famous and legendary 2D arcade gαme in which you have to assist the dinosaur T-Rex across the vast desert. Join now and have fun!', '2014', '★★★★★')">i</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Game Modal -->
+        <div id="game-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeGameModal()">&times;</span>
+                <h2 id="game-title">Gαme Title</h2>
+                <p id="game-description">Gαme description...</p>
+                <p id="game-release-date">Release Date: Unknown</p>
+                <p id="game-reviews">Reviews: No reviews available</p>
+            </div>
+        </div>
+
+        <!-- Game Widget -->
+        <div id="game-widget" class="widget" style="display: none;">
+            <iframe id="game-frame" src="" frameborder="0"></iframe>
+            <button id="fullscreen-btn">Fullscreen</button>
+            <button id="close-widget-btn">Close</button>
+            <p id="game-error" style="display: none; color: red;">Error loading gαme. Please try again later.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SkamHub</p>
+    </footer>
+
+</body>
+</html>

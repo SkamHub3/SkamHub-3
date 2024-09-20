@@ -55,7 +55,7 @@ document.getElementById('login-btn').addEventListener('click', function() {
 // Logout functionality
 document.getElementById('logout').addEventListener('click', function () {
     localStorage.removeItem('username');
-    checkLoginStatus();  // Refresh to show the login form again
+    window.location.href = 'premium.html'; // Redirect to the login page after logout
 });
 
 // Handle the access games button click

@@ -17,12 +17,13 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="games.html">Gαmes</a></li>
+                <li><a href="gαmes.html">Gαmes</a></li>
                 <li><a href="websites.html" class="active">Websites</a></li>
                 <li><a href="premium.html">Premium</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <!-- Main Content -->
     <main>
@@ -199,13 +200,13 @@
     </main>
 
     <!-- Modal Structure -->
-    <div id="game-modal" class="modal">
-        <div id="game-modal-content" class="modal-content">
-            <span id="game-modal-close" class="close" onclick="closeGameModal()">&times;</span>
-            <h3 id="game-title"></h3>
-            <p id="game-description"></p>
-            <p id="game-release-date"></p>
-            <pre id="game-reviews"></pre>
+    <div id="game-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeGameModal()">&times;</span>
+            <h2 id="game-title">Gαme Title</h2>
+            <p id="game-description">Gαme description...</p>
+            <p id="game-release-date">Release Date: Unknown</p>
+            <p id="game-reviews">Reviews: No reviews available</p>
         </div>
     </div>
 
