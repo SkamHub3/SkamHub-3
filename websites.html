@@ -32,6 +32,20 @@
             <a href="premium.html" class="mobile-nav-button">Premium</a>
         </div>
 
+                <!-- Chat Button -->
+    <div id="chat-button" class="chat-button">
+        <img src="chat.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chat Iframe Container -->
+    <div id="chat-iframe-container" class="chat-iframe-container">
+        <div class="iframe-header">
+            <button id="close-chat" class="close-chat-btn">&times;</button>
+        </div>
+        <p>BETA</p>
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/27cf0a0b-8031-4479-8e82-553e613b65c8"></iframe>
+    </div>
+
     <!-- Main Content -->
     <main>
         <h2>WEBSITES</h2>
@@ -286,5 +300,7 @@ function highlightGame(gameElement) {
             document.getElementById('game-modal').style.display = 'none';
         }
     </script>
+        <script src="websites.js"></script>
+
 </body>
 </html>

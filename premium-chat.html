@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkamHub Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <header class="chat-header">
+            <img src="skamhub logo.png" alt="SkamHub Chat Logo" class="logo">
+            <h1>SkamHub Chat (Premium)</h1>
+        </header>
+
+        <!-- Chat Box -->
+        <div id="chat-box" class="chat-box">
+            <!-- Messages will be dynamically added here -->
+        </div>
+
+        <!-- User Input -->
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div id="loading" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="premium-chat.js"></script>
+</body>
+</html>

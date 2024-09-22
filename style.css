@@ -1362,6 +1362,63 @@ header nav.active {
     transform: translateY(1px); /* Button press effect */
 }
 
+/* Premium Widget 4 Styles */
+.premium-widget-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #742e5a; /* Border color matching the theme */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.widget-image-3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.widget-content-3 {
+    padding: 20px;
+}
+
+.widget-content-3 h2 {
+    font-size: 24px;
+    color: #44002b; /* Title color */
+    margin-bottom: 10px;
+}
+
+.widget-content-3 p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.premium-button-3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #44002b; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.premium-button-3:hover {
+    background-color: #462439; /* Darker on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.premium-button-3:active {
+    transform: translateY(1px); /* Button press effect */
+}
+
 
 
 
@@ -1689,7 +1746,7 @@ header nav.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     position: fixed; /* Fixed at the top */
     width: 200px; /* Set width */
-    top: 500px; /* Slightly down from the top */
+    top: 175px; /* Slightly down from the top */
     right: 20px; /* Positioned to the right */
     z-index: 1000; /* Ensure it stays on top */
 }
@@ -1706,4 +1763,199 @@ header nav.active {
 
 .scroll-nav a:hover {
     background-color: #2a2a2a; /* Change background on hover */
+}
+
+
+
+
+
+
+
+
+/* SkamHub Blue */
+:root {
+    --skamhub-blue: #007bff; /* Replace with the exact SkamHub blue if necessary */
+}
+
+/* Circular Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Changed to right */
+    width: 60px;
+    height: 60px;
+    background-color: var(--skamhub-blue); /* SkamHub blue */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Smooth hide effect */
+}
+
+.chat-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Chat Iframe Container */
+.chat-iframe-container {
+    position: fixed;
+    bottom: -500px;
+    right: 20px; /* Changed to right */
+    width: 350px;
+    height: 460px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 999;
+    transition: bottom 0.5s ease;
+}
+
+/* Close Button inside iframe */
+.iframe-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: #333;
+}
+
+.close-chat-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.close-chat-btn:hover {
+    color: #f00;
+}
+
+
+
+
+
+
+
+
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.chat-header img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.chat-box {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #444;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.message.user {
+    background-color: #007bff;
+    align-self: flex-end;
+    color: white;
+}
+
+.message.bot {
+    background-color: #555;
+    align-self: flex-start;
+    color: white;
+}
+
+.chat-input-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.chat-input-area input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.chat-input-area button {
+    width: 20%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.chat-input-area button:hover {
+    background-color: #0056b3;
+}
+
+.loading-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
