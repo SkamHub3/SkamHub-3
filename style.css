@@ -1747,7 +1747,7 @@ header nav.active {
     position: fixed; /* Fixed at the top */
     width: 200px; /* Set width */
     top: 175px; /* Slightly down from the top */
-    right: 20px; /* Positioned to the right */
+    left: 20px; /* Positioned to the left */
     z-index: 1000; /* Ensure it stays on top */
 }
 
