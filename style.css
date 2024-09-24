@@ -1746,7 +1746,7 @@ header nav.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     position: fixed; /* Fixed at the top */
     width: 200px; /* Set width */
-    top: 175px; /* Slightly down from the top */
+    bottom: 50px; /* Slightly down from the top */
     left: 20px; /* Positioned to the left */
     z-index: 1000; /* Ensure it stays on top */
 }
