@@ -10,7 +10,8 @@ const validUsers = [
     { username: 'lwarwick', password: '6Q1S3' },
     { username: 'mzablocki', password: 'BU24Z' },
     { username: 'wjlee', password: '4LJIX' },
-    { username: 'rcrawley', password: 'M5OF8' }
+    { username: 'rcrawley', password: 'M5OF8' },
+    { username: 'guest', password: 'guest' }
 
 ];
 
