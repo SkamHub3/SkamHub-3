@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDULearn</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="edulearn-favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section with Logo and Back Button -->
+    <header>
+        <!-- Back button (handled by JS to go to the recent page) -->
+        <button class="back-button" id="goBackButton">← Back</button>
+        <img src="edulearn.png" alt="EDULearn Logo" class="logo">
+    </header>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button id="toggleTheme">Switch Mode</button>
+    </div>
+
+    <!-- Widgets Section -->
+    <section class="widget-section">
+        <h2>Explore Educational Resources</h2>
+
+        <div class="widget-grid">
+            <!-- Example of a widget -->
+            <div class="widget">
+                <a href="https://www.office.com/" target="_blank">
+                    <img src="Microsoft_365_(2022).svg.png" alt="Microsoft 365 Logo">
+                    <p>Microsoft 365</p>
+                </a>
+            </div>
+            <div class="widget">
+                <a href="https://www.kerboodle.com" target="_blank">
+                    <img src="kerboodle.png" alt="Kerboodle Logo">
+                    <p>Kerboodle</p>
+                </a>
+            </div>
+            <div class="widget">
+                <a href="https://www.bbc.co.uk/bitesize" target="_blank">
+                    <img src="BBC_Bitesize_2021_(Symbol).svg" alt="BBC Bitesize Logo">
+                    <p>BBC Bitesize</p>
+                </a>
+            </div>
+            <!-- Add more widgets as needed -->
+        </div>
+    </section>
+
+    <script src="edulearn.js"></script>
+</body>
+</html>

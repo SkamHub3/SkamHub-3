@@ -1,0 +1,150 @@
+/* Default (Light Mode) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+    --widget-bg: #f4f4f4;
+    --widget-border: #ddd;
+    --button-bg: #333;
+    --button-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Other styles remain unchanged */
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle button:hover {
+    background-color: #555;
+}
+
+/* Widget Section */
+.widget-section {
+    text-align: center;
+}
+
+.widget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.widget {
+    background-color: var(--widget-bg);
+    border: 1px solid var(--widget-border);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.widget img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.widget p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.widget:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #f4f4f4;
+    --widget-bg: #333;
+    --widget-border: #444;
+    --button-bg: #f4f4f4;
+    --button-color: #121212;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .widget-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .theme-toggle button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .back-button {
+        left: 10px;
+        top: 10px;
+    }
+}
