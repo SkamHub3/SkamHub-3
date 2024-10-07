@@ -1968,26 +1968,4 @@ header nav.active {
 
 
 
-.vote-banner {
-    background-color: #007bff; /* Bright yellow background */
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for pop effect */
-    border-bottom: 5px solid #00087d; /* Bottom border to emphasize */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
-    z-index: 999; /* Ensure it stays on top */
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
-.vote-banner p {
-    margin: 0;
-}
-
-body {
-    padding-top: 60px; /* Add padding so content doesn't overlap the banner */
-}
